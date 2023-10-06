@@ -10,6 +10,7 @@ describe("getNumbersWithSquareRoots", () => {
   });
 
   it("If N = 200 then should return an exact array of 15 numbers", () => {
+    console.log(getNumbersWithSquareRoots(200))
     expect(getNumbersWithSquareRoots(200)).toEqual([
       0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196,
     ]);

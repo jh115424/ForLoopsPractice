@@ -1,0 +1,54 @@
+// const sum = [22, 45, 4, 65];
+
+
+//  function getAverage(array) {
+//   const sum = 0;
+
+//   let total = 0;
+
+//   for(let i = 0; i < array.length; i++) {
+//     total += array[i];
+
+  
+//   }
+//   return total/array.length;
+
+//   }
+//   // Your code goes here..
+
+
+//  console.log( getAverage([22, 45, 4, 65]));
+
+
+  
+   
+
+
+
+
+function getStringSum(str) {
+
+
+  const sum = 17;
+  const total = 0;
+
+
+
+
+
+  for(let i = 0; i < str.length; i++){
+   let char = str[i];
+if(!isNaN(parseInt(char))){
+  total += parseInt(char);
+}}
+return total;
+
+  } 
+
+
+
+
+
+
+  console.log(getStringSum("GH2U87A"));
+  console.log(getStringSum("GHIUJUHSG"));

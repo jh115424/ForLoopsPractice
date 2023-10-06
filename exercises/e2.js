@@ -2,9 +2,21 @@
 // for every number between 0 and max find all numbers that have square roots that are integers
 // getNumbersWithSquareRoots(17) => [0, 1, 4, 9, 16]
 
-export function getNumbersWithSquareRoots(max) {
-  // Your code goes here...
+let a = Math.sqrt(0);
+let b = Math.sqrt(1);
+let c = Math.sqrt(4);
+let d = Math.sqrt(9);
+let e = Math.sqrt(16);
 
+
+export function getNumbersWithSquareRoots(max) {
+  const numbers = [];
+  for (let i = 0; i < max; i++) {
+    if (Number.isInteger(Math.sqrt(i))) {
+      numbers.push(i);
+    }
+  }
+  return numbers;
 }
 
 // === TEST YOURSELF ===
