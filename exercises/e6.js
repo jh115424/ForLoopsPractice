@@ -6,6 +6,16 @@
 export function getClientWithNoMoney(array) {
   // Your code goes here...
 
+
+
+
+
+
+
+
+
+
+
 }
 
 // === TEST YOURSELF ===

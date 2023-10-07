@@ -14,12 +14,16 @@ export function getAllClientNames(array) {
     'Phil',
   ];
 
-  let namesArray = [0];
+  let length = names.length;
+
+
+return names;
 
 
 
 
 }
+
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-5"

@@ -8,11 +8,15 @@ function getAllClientNames(array) {
     'Phil',
   ];
 
-  let namesArray = [0];
+  let length = names.length;
 
-return namesArray.map((person) => person.name);
+
+
+
+
 
 
 }
 
-console.log(getAllClientNames(names));
+
+return names;
