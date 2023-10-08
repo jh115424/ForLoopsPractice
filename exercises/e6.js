@@ -6,17 +6,28 @@
 export function getClientWithNoMoney(array) {
   // Your code goes here...
 
+let noMoney = [];
+
+for(let i = 0; i < array.length; i ++){
+
+  if(array[i].balance === 0){
+
+    noMoney.push(array[i].name);
 
 
 
 
 
+  }
+}
 
-
+return noMoney
 
 
 
 }
+
+
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-6"

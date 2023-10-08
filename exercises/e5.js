@@ -6,15 +6,15 @@
 
 export function getAllClientNames(array) {
 
-  const names = [
-    'Susan',
-    'Morgan',
-    'Joshua',
-    'Candy',
-    'Phil',
-  ];
+  let names = [];
 
-  let length = names.length;
+  for(let i = 0; i <array.length; i++){
+
+       names.push(array[i].name);
+    
+
+    
+  }
 
 
 return names;
