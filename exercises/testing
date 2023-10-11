@@ -1,22 +1,40 @@
-function getAllClientNames(array) {
+ function getClientWithLeastPositiveBalance(array) {
+  // Your code goes here...
 
-  let names = [];
+let lowestBalance = [1];
+let balance = []
 
-  for(let i = 0; i <array.length; i++){
 
-       names.push(array[i].name);
-    
+  for (let i = 0; i < array.length; i++) {
+if(array[i].balance > 0) {
+  let currentBalance = array[i].balance;
 
-    
+
+    }
   }
-
-
-return names;
-
-
-
-
-}
+return lowestBalance;
+  } 
 
 
 
+
+ function getClientWithLeastPositiveBalance(array) {
+    // Your code goes here...
+  
+  
+  let lowestBalance2 = array[0];
+  let lowestBalance = []
+  
+  
+    for (let i = 0; i < array.length; i++) {
+      if(array[i] > lowestBalance && array[i].balance > 0) {
+        lowestBalance.push(array[i].array);
+  } 
+  
+      }
+  return lowestBalance;
+    } 
+
+
+
+   
