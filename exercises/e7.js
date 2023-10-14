@@ -8,7 +8,6 @@ export function getClientWithLeastPositiveBalance(array) {
   // Your code goes here...
 
   const lowestAccount = [];
-  let newBalance;
   let client;
 
   for (let i = 0; i < array.length; i++) {
