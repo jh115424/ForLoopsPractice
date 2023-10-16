@@ -1,46 +1,42 @@
-const bankAccounts = [
-  {
-    id: 1,
-    name: "Susan",
-    balance: 100.32,
-    deposits: [150, 30, 221],
-    withdrawals: [110, 70.68, 120],
-  },
-  { id: 2, name: "Morgan", balance: 1100.0, deposits: [1100] },
-  {
-    id: 3,
-    name: "Joshua",
-    balance: 18456.57,
-    deposits: [4000, 5000, 6000, 9200, 256.57],
-    withdrawals: [1500, 1400, 1500, 1500],
-  },
-  { id: 4, name: "Candy", balance: 0.0 },
-  { id: 5, name: "Phil", balance: 18, deposits: [100, 18], withdrawals: [100] },
-];
 
 
-function getClientWithLeastPositiveBalance(array) {
+describe('getClientsWithLetterInName', () => {
+  it('Should exist', () => {
+    expect(getClientsWithLetterInName).toBeInstanceOf(Function);
+  });
+  it('Should return an array of 4 items', () => {
+    expect(getClientsWithLetterInName(bankAccounts, 'a').length).toEqual(4);
+  });
+  it('Should return an exact array of 4 string values when \'a\' was passed', () => {
+    expect(getClientsWithLetterInName(bankAccounts, 'a')).toEqual([ 'Susan', 'Morgan', 'Joshua', 'Candy' ]);
+  });
+  it('Should return an exact array of 1 string value when \'c\' was passed', () => {
+    expect(getClientsWithLetterInName(bankAccounts, 'c')).toEqual([ 'Candy' ]);
+  });
+});
+
+
+ export function getClientsWithLetterInName(array, letter) {
   // Your code goes here...
 
-  const lowestAccount = [];
-  let client;
 
-  for (let i = 0; i < array.length; i++) {
-    if (array[i].balance > 0) {
-      if (
-        !lowestAccount.length ||
-        array[i].balance > lowestAccount[0].balance
-      ) {
-        client = array[i];
-        lowestAccount[0] = client;
-      }
-    }
-  }
+let namesWithLetter = [];
 
-  return lowestAccount;
+let letters = [];
 
-  lowestAccount.push(account);
+for(let i = 0; i < array.length; i++){
+ if(array[i].name.includes(letter)){
+   namesWithLetter.push(array[i].name);
+ } 
+
+
+
+}
+ 
+return namesWithLetter;
+
+
 }
 
 
-console.log(getClientWithLeastPositiveBalance(bankAccounts));
+

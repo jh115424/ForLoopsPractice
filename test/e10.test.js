@@ -16,3 +16,7 @@ describe('getClientsWithLetterInName', () => {
     expect(getClientsWithLetterInName(bankAccounts, 'c')).toEqual([ 'Candy' ]);
   });
 });
+
+
+
+
