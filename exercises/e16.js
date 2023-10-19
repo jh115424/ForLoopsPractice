@@ -8,6 +8,11 @@
 export function flatArrays(array) {
   // Your code goes here...
 
+  let flattenedArray = [];
+
+  
+
+
 }
 
 
