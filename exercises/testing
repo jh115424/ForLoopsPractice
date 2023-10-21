@@ -1,42 +1,16 @@
+function getFirstTenNumbers() {
+  const numbers = [];
 
+for (let i = 1; i <= 10; i++) {
+ numbers.push(i);
+}
 
-describe('getClientsWithLetterInName', () => {
-  it('Should exist', () => {
-    expect(getClientsWithLetterInName).toBeInstanceOf(Function);
-  });
-  it('Should return an array of 4 items', () => {
-    expect(getClientsWithLetterInName(bankAccounts, 'a').length).toEqual(4);
-  });
-  it('Should return an exact array of 4 string values when \'a\' was passed', () => {
-    expect(getClientsWithLetterInName(bankAccounts, 'a')).toEqual([ 'Susan', 'Morgan', 'Joshua', 'Candy' ]);
-  });
-  it('Should return an exact array of 1 string value when \'c\' was passed', () => {
-    expect(getClientsWithLetterInName(bankAccounts, 'c')).toEqual([ 'Candy' ]);
-  });
-});
-
-
- export function getClientsWithLetterInName(array, letter) {
-  // Your code goes here...
-
-
-let namesWithLetter = [];
-
-let letters = [];
-
-for(let i = 0; i < array.length; i++){
- if(array[i].name.includes(letter)){
-   namesWithLetter.push(array[i].name);
- } 
-
+return numbers;
 
 
 }
- 
-return namesWithLetter;
 
-
-}
+console.log(getFirstTenNumbers());
 
 
 

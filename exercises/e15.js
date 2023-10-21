@@ -4,24 +4,18 @@
 // NOTE: You can NOT use the array.concat() method in your code
 
 export function concatArrays(arr1, arr2) {
+  let result = [];
 
-   let result = [];
+  for (let letter of arr1) {
+    result.push(letter);
+  }
 
-   
+  for (let letter of arr2) {
+    result.push(letter);
+  }
 
+  return result;
 
-
-
-
-
-
-  // Your code goes here...
-  // const arr1Array = arr1;
-  // const arr2Array = arr2;
-
-  // const arr3Array = [...arr1Array, ...arr2Array];
-
-  // return arr3Array;
 }
 
 // === TEST YOURSELF ===

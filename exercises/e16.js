@@ -8,13 +8,23 @@
 export function flatArrays(array) {
   // Your code goes here...
 
-  let flattenedArray = [];
+// Your code goes here...
+let  flatArraysData =[];
+for(let index=0; index < array.length; index++){
+  if(!array[index].length){
+      flatArraysData.push(array[index])
+  }
+  for(let figure=0; figure<array[index].length; figure++ ){
 
-  
+      flatArraysData.push(array[index][figure]);
+  }
+}
+
+return flatArraysData;
+
 
 
 }
-
 
 
 // === TEST YOURSELF ===
